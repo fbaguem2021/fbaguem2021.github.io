@@ -9,28 +9,24 @@
     <script src="/UI/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
             <!-- <a class="navbar-brand" href="#"> -->
                 Inicio
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ejercicios</a>
-                    </li>              
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Ejercicios
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Drop Item 1</a></li>
+                            <li><a class="dropdown-item" href="#m06_02_ft_02">Interacció entre sistemes</a></li>
+                            <li><a class="dropdown-item" href="#prova">Prova</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -38,19 +34,24 @@
         </div>
     </nav>
     <div class="container-fluid">
+        <!-- Title template
+            div.row.mx-auto#>div.col-md.mt-4>h3 -->
+        <!-- Row template
+            div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1.row-cols-md-1.mb-2
+            div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1 -->
         <!-- Card template
-            div.col-md.mt-2>div.card.border.border-secondary.rounded>div.card-header.text-center{}+div.card-body-->
-        <div class="row mx-auto row-cols-lg-2 row-cols-sm-1 row-cols-xs-1">
-            <div class="col mt-4">
-                <h3>M06_02_FT_02 - Interacció entre sistemes</h3>
+            div.col-md.mt-4>div.card.border.border-secondary.rounded>div.card-header.text-center{}+div.card-body -->
+        <div class="row mx-auto row-cols-lg-2 row-cols-sm-1 row-cols-xs-1" id="m06_02_ft_02">
+            <div class="col mt-5">
+                <h3 class="mt-4">M06_02_FT_02 - Interacció entre sistemes</h3>
             </div>
         </div>
-        <div class="row mx-auto row-cols-lg-2 row-cols-sm-1 row-cols-xs-1">
+        <div class="row mx-auto row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1 row-cols-xs-1 mb-2">
             <div class="col-md mt-4">
                 <div class="card border border-secondary rounded">
                     <div class="card-header text-center">JS output</div>
                     <div class="card-body">
-                        <iframe width="100%" height="250" src="//jsfiddle.net/fbaguem2021/pf9L52go/10/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <iframe width="100%" height="300" src="//jsfiddle.net/fbaguem2021/pf9L52go/20/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -58,19 +59,45 @@
                 <div class="card border border-secondary rounded">
                     <div class="card-header text-center">JS Pop-Up</div>
                     <div class="card-body">
-                        <iframe width="100%" height="250" src="//jsfiddle.net/fbaguem2021/r1dmgy6b/3/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <iframe width="100%" height="300" src="//jsfiddle.net/fbaguem2021/r1dmgy6b/3/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
-            <div class="col-md mt-2">
+            <div class="col-md mt-4">
                 <div class="card border border-secondary rounded">
                     <div class="card-header text-center">JS Console</div>
                     <div class="card-body">
-                        <iframe width="100%" height="250" src="//jsfiddle.net/fbaguem2021/90djmqa8/5/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <iframe width="100%" height="300" src="//jsfiddle.net/fbaguem2021/90djmqa8/5/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mt-4">
+                <div class="card border border-secondary rounded">
+                    <div class="card-header text-center">JS Validation</div>
+                    <div class="card-body">
+                        <iframe width="100%" height="300" src="//jsfiddle.net/fbaguem2021/atbozqmx/7/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <!-- <iframe width="100%" height="300" src="//jsfiddle.net/fbaguem2021/omnqtyp3/11/embedded/html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> -->
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- <div class="row mx-auto" id="prova">
+            <div class="col mt-3">
+                <h3>Prova</h3>
+            </div>
+        </div>
+        <div class="row mx-auto row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-xs-1 mb-2">
+            <div class="col-md mt-4">
+                <div class="card border border-secondary rounded">
+                    <div class="card-header text-center">JS output</div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
 </body>
 </html>
