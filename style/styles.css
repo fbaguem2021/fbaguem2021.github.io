@@ -1,3 +1,6 @@
 .bg-embed-dark {
     background-color: #20262e;
 }
+#success, #info, #danger {
+    display: none;
+}
