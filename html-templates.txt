@@ -1,0 +1,20 @@
+============ CARD TEMPLATES ============
+    Sheet Title ========================
+        div.row.mx-auto#>div.col.mt-3>h3
+    Title template =====================
+        div.row.mx-auto#>div.col-md.mt-4>h3
+    Row template =======================
+        
+        div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1.row-cols-md-1.mb-2
+        div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1
+    Card template ======================
+        div.col-md.mt-4>div.card.border.border-secondary.rounded>div.card-header.text-center{card header title}+div.card-body.bg-embed-dark.rounded-bottom
+=========== NAVBAR TEMPLATES ===========
+    Dropdown Header Template ===========
+        h6.dropdown-header{dropdown title}
+    Dropdown Divider Template ==========
+        li>hr.dropdown-divider
+    Dropdown Item Template =============
+        li>a.dropdown-item[href=#]{item name}
+    Dropdown Submenu Template ==========
+        li>a.dropdown-item[href]{submenu title &raquo;}+ul.dropdown-menu.dropdown-submenu>(li>a.dropdown-item[href]{submenu item name})*1
