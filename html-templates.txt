@@ -1,9 +1,10 @@
 ============ CARD TEMPLATES ============
     Sheet Title ========================
-        div.row.mx-auto#>div.col.mt-3
+        div.row.mx-auto#>div.col.mt-3>h3
     Title template =====================
         div.row.mx-auto#>div.col-md.mt-4>h3
     Row template =======================
+        
         div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1.row-cols-md-1.mb-2
         div.row.mx-auto.row-cols-lg-2.row-cols-sm-1.row-cols-xs-1
     Card template ======================
