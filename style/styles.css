@@ -1,3 +1,40 @@
+html {
+    height: 100%;
+}
+#navbar {
+    height: 56px;
+}
+.mt-alert {
+    margin-top: var(--m4);
+}
+.mt-card {
+    margin-top: var(--m5);
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.floating-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.tsize-btn {
+    font-size: var(--tsize-btn) !important;
+}
+
+#modal.hidden {
+    display: none;
+}
+
+/* .btn-borrar::after {
+    content: "Esborrar";
+}
+@media (max-width: 995px) {
+    .btn-borrar::after {
+        content:"";
+    }
+} */
+
 .bg-embed-dark {
     background-color: #20262e;
 }
