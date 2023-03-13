@@ -1,0 +1,26 @@
+.resultado {
+    width: 150px;
+}
+.resultado > pre {
+    font-size: 15px;
+}
+.resultado > pre#primero::before {
+    font-weight: bold;
+    content: 'Primer plato:  ';
+}
+.resultado > pre#segundo::before {
+    font-weight: bold;
+    content: 'Segundo plato: ';
+}
+.resultado > pre#bebida::before  {
+    font-weight: bold;
+    content: 'Bebida:        ';
+}
+.resultado > pre#postre::before  {
+    font-weight: bold;
+    content: 'Postre:        ';
+}
+.resultado > pre#total::before   {
+    font-weight: bold;
+    content: 'Precio total:  ';
+}
