@@ -2,7 +2,7 @@
     width: 150px;
 }
 .resultado > pre {
-    font-size: 15px;
+    font-size: 17px;
 }
 .resultado > pre#primero::before {
     font-weight: bold;
@@ -23,4 +23,11 @@
 .resultado > pre#total::before   {
     font-weight: bold;
     content: 'Precio total:  ';
+}
+.resultado > pre:not(#total)::after {
+    content: '\a Nombre: ' attr(producto) 
+             '\a Precio: ' attr(precio) ' €';
+}
+.resultado > pre#total::after {
+    content: '\a Precio: ' attr(precio) ' €'
 }
