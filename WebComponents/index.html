@@ -6,94 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebComponents</title>
 
-    <script src="js/Producto.js"></script>
-    <script src="js/Recivo.js"></script>
+    <link rel="stylesheet" href="css/Producto.css">
+    <link rel="stylesheet" href="css/Recivo.css">
+    <script src="js/utils.js"></script>
+    <script src="js/Producto.js" type="module"></script>
+    <script src="js/Recivo.js"   type="module"></script>
     <script src="js/form-controller.js"></script>
+    <script>
+    // const json_productos = await readJson();
+    </script>
 </head>
+<style>
+#test::after {
+    content: attr(texto)" mundo";
+}
+</style>
 <body>
-    <pre id="test">
-        <code class="language-html">
-    </pre>
-    <form name="form-comidas" onsubmit="return validar(this)">
+    <!-- <form name="form-comidas" onsubmit="return validar(this)"> -->
+    <h1 id="test" texto="hola"></h1>
+    <form name="form-comidas"></form>
         <h1>Carta de comidas</h1>
-        <comanda-productos data-json='{
-            "nombre"   : "Primer Plato",
-            "id"       : "primero",
-            "productos": [
-                {
-                    "precio" : 0,
-                    "nombre" : "Escoge algo"
-                },{
-                    "precio" : 10,
-                    "nombre" : "Sopa"
-                },{
-                    "precio" : 11.80,
-                    "nombre" : "Macarrones"
-                },{
-                    "precio" : 8.79,
-                    "nombre" : "Ensalada"
-                }
-            ]
-        }'></comanda-productos>
-        <comanda-productos data-json='{
-            "nombre"   : "Segundo Plato",
-            "id"       : "segundo",
-            "productos": [
-                {
-                    "precio" : 0,
-                    "nombre" : "Escoge algo"
-                },{
-                    "precio" : 13.45,
-                    "nombre" : "Pescado"
-                },{
-                    "precio" : 20.5,
-                    "nombre" : "Bistec"
-                },{
-                    "precio" : 20.99,
-                    "nombre" : "Costilals"
-                }
-            ]
-        }'></comanda-productos>
-        <comanda-productos data-json='{
-            "nombre"   : "Bebida",
-            "id"       : "bebida",
-            "productos": [
-                {
-                    "precio" : 0,
-                    "nombre" : "Escoge algo"
-                },{
-                    "precio" : 5,
-                    "nombre" : "Agua"
-                },{
-                    "precio" : 5.75,
-                    "nombre" : "Cerbeza"
-                },{
-                    "precio" : 17.90,
-                    "nombre" : "Vino"
-                }
-            ]
-        }'></comanda-productos>
-        <comanda-productos data-json='{
-            "nombre"   : "Postre",
-            "id"       : "postre",
-            "productos": [
-                {
-                    "precio" : 0,
-                    "nombre" : "Escoge algo"
-                },{
-                    "precio" : 10.43,
-                    "nombre" : "Pastel"
-                },{
-                    "precio" : 8.25,
-                    "nombre" : "Helado"
-                },{
-                    "precio" : 2.5,
-                    "nombre" : "Cafe"
-                }
-            ]
-        }'></comanda-productos> 
+        <comanda-productos tipo-producto="primero"></comanda-productos>
+        <comanda-productos tipo-producto="segundo"></comanda-productos>
+        <comanda-productos tipo-producto="bebida"></comanda-productos>
+        <comanda-productos tipo-producto="postre"></comanda-productos>
         <button class="btn btn-secondary" type="submit">Crear comanda</button>
     </form>
-
+    <h1>Comanda</h1>
+    <comanda-recivo></comanda-recivo>
 </body>
 </html>

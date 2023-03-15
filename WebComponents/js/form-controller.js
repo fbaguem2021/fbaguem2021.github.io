@@ -5,7 +5,8 @@ function validar(self) {
     
     self.querySelectorAll('comanda-productos').forEach(cp => {
         //productos.push(cp.shadowRoot.querySelector('select'))
-        var curr = cp.shadowRoot.querySelector('select');
+        // var curr = cp.shadowRoot.querySelector('select');
+        const curr = cp.querySelector('select');
         resultado[curr.id] = JSON.parse( curr.value );
     });
     /*
