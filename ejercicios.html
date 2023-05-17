@@ -8,10 +8,9 @@
     <script src="./tercers/jquery.min.js"></script>
     <script src="./js/funcionalidades.js"></script>
 </head>
-<body>
-    <script> loadHTML("navbar", "views/ejercicios-menu.html"); </script>
-    <!-- <script> loadHTML("navbar", "views/test-menu.html"); </script> -->
-    <header id="navbar"></header>
+<body onload="readFile('./views/ejercicios-menu.html', 'navbar')">
+    <!-- onload="readFile('./views/ejercicios-menu.html', 'navbar')" -->
+    <header id="navbar" ></header>
     <div class="container-fluid">
         <div class="row mx-auto" id="m06_02_ft_02">
             <div class="col">
@@ -90,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mx-auto" id="m06_03_ft_01">
+        <div class="row mx-auto" id="m06_06_ft_01">
             <div class="col mt-3">
                 <h3>M06_06_FT_01 - Manipulació del DOM</h3>
             </div>
